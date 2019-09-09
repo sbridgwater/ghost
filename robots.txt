@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: http://www.omgarden.it/sitemap.xml
+Sitemap: https://keen-ramanujan-b30450.netlify.com/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/
