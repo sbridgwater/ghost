@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: https://keen-ramanujan-b30450.netlify.com/sitemap.xml
+Sitemap: https://dev.bridgwaters.net/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/
