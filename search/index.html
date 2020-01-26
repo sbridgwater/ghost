@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Title -->
+      <title>Site Search</title>
+      <!-- gulp:css -->
+      <link rel="stylesheet" href="/assets/css/app.min.css?v=fc62713e78">
+      <!-- endgulp -->
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,500i,700,700i" rel="stylesheet">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://dev.omgarden.it/search/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Omgarden" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site Search" />
+    <meta property="og:description" content="Omgarden site search" />
+    <meta property="og:url" content="https://dev.omgarden.it/search/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1505764922570-e85a4194a120?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ" />
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Site Search" />
+    <meta name="twitter:description" content="Omgarden site search" />
+    <meta name="twitter:url" content="https://dev.omgarden.it/search/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1505764922570-e85a4194a120?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Marilina Razzi" />
+    <meta name="twitter:site" content="@tryghost" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="625" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Omgarden",
+        "logo": "https://dev.omgarden.it/content/images/2019/10/scritta-omg-.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Marilina Razzi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://dev.omgarden.it/content/images/2019/09/marilina-face-2.jpg",
+            "width": 270,
+            "height": 281
+        },
+        "sameAs": []
+    },
+    "headline": "Site Search",
+    "url": "https://dev.omgarden.it/search/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1505764922570-e85a4194a120?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "width": 1080,
+        "height": 625
+    },
+    "description": "Omgarden site search",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://dev.omgarden.it/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.30" />
+    <link rel="alternate" type="application/rss+xml" title="Omgarden" href="https://dev.omgarden.it/rss/" />
+    <style>
+.site-header {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    color: #fff;
+    background: #0a7aea no-repeat 50%;
+    background-size: cover;
+    background-image: url(/content/images/2019/09/rainbow-cover-2-crop.jpg);
+</style>
+   </head>
+   <body class="page-template page-search">
+      <header class="header-area d-flex align-items-center clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="logo">
+                    <a href="https://dev.omgarden.it"><img src="/content/images/2019/10/scritta-omg-.jpg" alt="Omgarden"/></a>
+                </div>
+            </div>
+            <div class=" col-10">
+                <div class="header-container d-flex">
+                    <nav class="highlight">
+                      <ul id="responsive-menu" class="slimmenu">
+     <li><a href="https://dev.omgarden.it/">Home</a></li>
+     <li><a href="https://dev.omgarden.it/tag/chisiamo/">Noi</a></li>
+     <li><a href="https://dev.omgarden.it/tag/attivita/">Attivita&#x27;</a></li>
+     <li><a href="https://dev.omgarden.it/tag/biblioteca/">Biblioteca</a></li>
+     <li><a href="https://dev.omgarden.it/tag/calendario/">Calendario</a></li>
+    <li>
+        <div class="search-btn text-right">
+	<button class="top-sign-btn" id="search-btn" onClick="location.href='/search'"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </li>
+</ul>
+
+                    </nav> 
+                </div>
+            </div>
+        </div>
+    </div>
+</header>      
+<div class="page-title-area pb-60 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-title text-center py-5 has_featured_image "  style="background-image:url(https://images.unsplash.com/photo-1505764922570-e85a4194a120?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);">
+                    <h1 class="text-center">Site Search</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="style-guide-area pb-100 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+               <div class="page-wrapper">
+                     <!--kg-card-begin: html--><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Site Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"/>
+</head>
+<body>
+<div id="playground" ng-app="playground" ng-controller="PlaygroundController">
+    <div>
+        <div class="col-md-9 left-panel">
+            <div class="input-group">
+                <div id=""></div>
+                <input type="search" class="form-control" id="q" placeholder="Ricerca">
+               <span class="input-group-addon">
+                            <i class="fa fa-search"></i>
+               </span>
+            </div>
+        </div>
+
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/angularjs/1.4.7/angular.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/algoliasearch/3.10.2/algoliasearch.min.js"></script>
+
+<script type="text/javascript">
+            var playground = angular.module("playground", []);
+
+            playground.controller("PlaygroundController", function ($scope) {
+                $scope.config = {
+                    env: 'dev',
+                    dev: {
+                        appId: 'L50PET1FKD',
+                        apiKey: 'fa104117f41006a62d05cb6ea510a9bb',
+                        indexName: 'omgarden',
+                        inputSelector: '#q',
+                        autocompleteOptions: {
+                            debug: "true"
+                        },
+                        facetFilters: '',
+                        optionalFacetFilters: ''
+                    },
+                    prod: {
+                        appId: '',
+                        apiKey: '',
+                        indexName: '',
+                        inputSelector: '#q',
+                        autocompleteOptions: {
+                            debug: "true"
+                        },
+                        facetFilters: '',
+                        optionalFacetFilters: ''
+                    }
+                };
+
+                $scope.selectedIndexChanged = function(){
+                        setTimeout(function(){jQuery('input#q').focus();}, 50);
+                };
+
+                $scope.indices = [];
+
+                var docSearch = undefined;
+                var client;
+
+                if (localStorage && localStorage['config']) {
+                    $scope.config = JSON.parse(localStorage['config']);
+                }
+
+                var initDocSearch = function (first_time) {
+                    if (!first_time) {
+                        localStorage['config'] = JSON.stringify($scope.config);
+                    }
+
+                    $scope.config[$scope.config.env].algoliaOptions = {
+                        'hitsPerPage': 5,
+                        'facetFilters': $scope.config[$scope.config.env].facetFilters,
+                        'optionalFacetFilters': $scope.config[$scope.config.env].optionalFacetFilters
+                    };
+
+                    if ($scope.config[$scope.config.env].appId && $scope.config[$scope.config.env].apiKey && $scope.config[$scope.config.env].indexName) {
+                        if (docSearch !== undefined) {
+                            jQuery('.algolia-autocomplete').remove();
+                            jQuery('.input-group').prepend('<input type="search" class="form-control" id="q">');
+                        }
+
+                        docSearch = docsearch($scope.config[$scope.config.env], {debug: true});
+                    }
+
+                    if ($scope.config[$scope.config.env].appId != '' && $scope.config[$scope.config.env].apiKey != '') {
+                        client = algoliasearch($scope.config[$scope.config.env].appId, $scope.config[$scope.config.env].apiKey, {
+                          protocol: 'https:'
+                        });
+
+                        client.listIndexes(function(err, content) {
+                            if (err) {
+                                $scope.indices = [];
+                            }
+                            else {
+                                $scope.indices = content.items.map(function (item) {
+                                    return item.name;
+                                });
+                            }
+                            $scope.$apply();
+
+                        });
+                    }
+
+                    if (first_time) {
+                        jQuery('input#q').focus();
+                    }
+                };
+
+                var values = [
+                    'config.env',
+                    'config.dev.appId', 'config.dev.apiKey', 'config.dev.indexName', 'config.dev.facetFilters', 'config.dev.optionalFacetFilters',
+                    'config.prod.appId', 'config.prod.apiKey', 'config.prod.indexName', 'config.prod.facetFilters', 'config.prod.optionalFacetFilters'
+                ];
+
+                angular.forEach(values, function(value, key) {
+                    $scope.$watch(value, function(newValue, oldValue) {
+                        if (newValue != oldValue) {
+                            initDocSearch();
+                        }
+                    });
+                });
+
+                initDocSearch(true);
+            });
+
+
+</script>
+
+<style>
+            body
+            {
+                margin: 0px;
+                background-color: #FAFAFA;
+            }
+    
+            .input-group
+            {
+				width: 500px;
+                margin: auto;
+			}
+            
+
+            .right-panel
+            {
+                background-color: #FAFAFA;
+                height: 100%;
+                position: absolute;
+                right: 0px;
+                border-left: solid 1px #DDD;
+                padding-top: 100px;
+            }
+
+            .left-panel
+            {
+                padding-top: 10px;
+                width: 40%;
+            }
+ 
+			@media only screen and (max-width: 500px) {
+    		 .algolia-autocomplete .ds-dropdown-menu {
+  				max-width: 300px;
+                min-width: 200px;
+				}
+             .input-group .form-control {
+				width: 50%;
+			    }
+			}
+
+</style>
+</body>
+</html>
+<!--kg-card-end: html-->
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+      <footer>
+    <div class="footer-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+
+                </div>
+				
+				
+				
+				<div class="col-md-8 mx-auto">
+				               <div class="footer-top text-center">
+                 
+               </div>
+				</div>
+				
+				
+            </div>
+        </div>
+    </div>
+        <div class="footer-bottom-area clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="social-link float-right">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+ 
+</footer>
+      <div class="modal fade" id="ghost-search-modal" tabindex="-1" role="dialog" aria-labelledby="ghost-search-modal-title" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="ghost-search-modal-title">Search Here</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="#" method="get">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="form-row">
+                              <div class="form-group col-md-12">
+                                 <input type="search" id="search-text" class="form-control" placeholder="Type to search"/>
+                              </div>
+                              <div id="gh-search-results"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- gulp:js -->
+      <script src="/assets/js/build.min.js?v=fc62713e78"></script>
+      <!-- endgulp -->
+      
+   </body>
+</html>
